@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import {point} from '../models/point.model';
 
 @Component({
   selector: 'app-root',
@@ -18,28 +19,28 @@ export class AppComponent {
   lngmario: number = 9.192709;
   latmario2: number = 45.505691;
   lngmario2: number = 9.191819;
- private icon =  {
+  icon =  {
     url:'./assets/img/cat_acrobat.ico',
          scaledSize: {
       width: 60,
       height: 60
     }
   };
-private icon2 =  {
+ icon2 =  {
     url:'./assets/img/dog.ico',
          scaledSize: {
       width: 60,
       height: 60
     }
   };
-private icon3 =  {
+ icon3 =  {
     url:'./assets/img/mario.ico',
          scaledSize: {
       width: 60,
       height: 60
     }
   };
-private icon4 =  {
+ icon4 =  {
     url:'./assets/img/mario2.ico',
          scaledSize: {
       width: 60,
@@ -57,10 +58,10 @@ private icon4 =  {
 
    rectangle: Array<point> =
   [
-    {lng:9.0, lat:45.6},
     {lng:9.1, lat:45.6},
-    {lng:9.1, lat:45.4},
-    {lng:9.0, lat:45.4}
+    {lng:9.2, lat:45.6},
+    {lng:9.2, lat:45.4},
+    {lng:9.1, lat:45.4}
 
 
 
